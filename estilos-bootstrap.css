@@ -1,0 +1,264 @@
+
+
+.nav-link:hover{
+    border-color:black ;
+    box-shadow: 0px 0px 13px rgb(41, 41, 41);
+}
+
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display:none;
+    }
+}
+
+/*Inicio*/
+
+#inicio{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .container{
+    padding: 3rem;
+}
+
+.front-end{
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+#inicio .container h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+/*estilos generales*/
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.titulo-seccion{
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+.texto-seccion{
+    font-size: 1.2rem;
+
+}
+
+/*sobre mi*/
+
+#sobre-mi{
+    color:white;
+    background-color: black;
+    height: 500px;
+    padding: 10px;
+}
+
+
+#sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+/*estilos de imagenes*/
+
+.lenguaje-logo{
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.lenguaje-logo:hover{
+    border-color:black ;
+    box-shadow: 0px 0px 13px rgb(41, 41, 41);
+}
+
+.logo-html button{
+    margin-top: 40px;
+}
+
+.logo-css button{
+    margin-top:40px;
+}
+
+
+.logo-bootstrap button{
+    margin-top: 60px;
+}
+
+/*Habilidades*/
+
+#habilidades{
+    padding: 90px;
+    background-color: #f5f6f7;
+
+}
+
+/*Contenedores habilidades*/
+
+.info-html{
+    color: white;
+    background-image: linear-gradient(to right, #e34c26, #f07845);
+    border-radius: 15px;
+    border: solid black 2px; 
+}
+
+.info-css{
+    color: white;
+    background-image: linear-gradient(to left, #0d6efd, #264de4);
+    border-radius: 15px;
+    border: solid black 2px;
+}
+
+.info-js{
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, #e0c308e0, #f3dd50);
+    border-radius: 15px;
+    border: solid black 2px;
+}
+
+.info-bootstrap{
+    color: white;
+    background-image: linear-gradient(to right, #782de7, #6610f2);
+    border-radius: 15px;
+    border: solid black 2px;
+}
+
+.info-open{
+    height: auto;
+    padding: 10px;
+    
+}
+
+.info-open p{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+/*animaciones habilidades*/
+.info-open{
+    animation-name: verInfo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+  }
+
+  @keyframes verInfo{
+    0%{
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50%{
+      transform: translateY(-50%);
+      opacity: 0.5;
+    }
+    100%{
+      transform: translateY(0%);
+      opacity: 1;
+
+    }
+  }
+
+/*Contacto*/
+
+#contacto{
+    color:white;
+    background-color: black;
+}
+
+#contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+#contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+#contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#contacto .descripcion{
+    color:white;
+    font-size: 1.2rem;
+}
+
+/*footer*/
+
+footer{ 
+    color:white;
+    background-color: black;
+    min-height: 500px;
+}
+
+.footer-icono{
+    background-color:#f5f6f7;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.icono-redes a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: all 0.2sg ease-in;
+}
+
+.icono-redes i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+
+.icono-redes a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.icono-redes a:hover i{
+    color:black
+}

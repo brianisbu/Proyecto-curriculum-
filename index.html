@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo-->
+    <title>Proyecto Arg. Programa</title>
+    <!--Icono-->
+    <link rel="icon" type="image/x-icon" href="iconos/code-square.svg" >
+    <!--CSS-->
+    <link rel="stylesheet" href="estilos-bootstrap.css">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Anime On Scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+
+        <nav class="navbar bg-primary bg-primary navbar-dark navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="iconos/code-square.svg"  width="50px" alt="logo">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    <header id="inicio">
+      <div class="container d-flex flex-column justify-content-center align-items-center ">
+          <h1>Desarrollo font-end</h1>
+          <h2>Con el front-end creamos la vista de las pagina web y sus funcionalidades</h2>
+          <div class="col">
+            <img class="img-fluid mx-auto d-block front-end" src="imagenes/front-end.png" >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section data-aos="fade-right" 
+             data-aos-duration="1500" 
+              id="sobre-mi">
+
+      <div class="contenedor">
+            <h2>Conoceme un poco mas:
+            </h2>
+            <br>
+            <p class="texto-seccion">
+              Me llamo Brian Bulacio. Soy estudiante de programacion web en Argentina Programa 4.0.<br>
+              Mis habilidades estan enfocadas en la programacion web front-end. Ahí trabajamos con la interfaz para que sea dinamica, y el usuario se lleve una agradable experiencia
+            </p>
+        </div>  
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <div class="container text-center">
+        <div class="row">
+          <h2>Habilidades</h2>
+
+          <div data-aos="fade-up-right" data-aos-duration="1100" class="col-sm-12 col-md-6 col-lg-3  lenguaje-logo logo-html" >
+            <img src="imagenes/html-logo.png" class="img-fluid mx-auto d-block front-end">
+            <button type="button"  class="btn btn-dark" onclick="mostrar(html)">Mas info sobre: HTML</button> 
+          </div>
+
+          <div hidden="true" class="info-html info-open">
+            <h2>Uso de html</h2>
+            <br>
+            <p class="texto-seccion">
+              HTML es un lenguaje de marcado <b>(no de programacion)</b>, que ayuda a la estructuracion de la pagina web.<br>
+              Tambien si se utiliza con buenas practicas, podremos hacer que el sitio web tenga un mayor alcanze de usuarios
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1300" class="col-sm-12 col-md-6 col-lg-3  lenguaje-logo logo-css" >
+            <img src="imagenes/css-logo.png" class="img-fluid mx-auto d-block front-end">
+            <button type="button"  class="btn btn-dark" onclick="mostrar(css)">Mas info sobre: CSS</button>
+          </div>
+          
+          <div hidden="true" class="info-css info-open">
+            <h2>Uso de css</h2>
+            <br>
+            <p class="texto-seccion">
+              CSS es un lenguaje para darle estilos a las estructuras de HTML <b>(tampoco es un lenguaje de programacion)</b>. Tambien lo usamos para dale
+              direccion y formas a los eslemento HTML, y hacer que la pagina web se vea mas atractiva para el usuario
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1400" class="col-sm-12 col-md-6 col-lg-3 lenguaje-logo logo-js" >
+            <img src="imagenes/javascript-logo.png" class="img-fluid mx-auto d-block front-end">
+            <button type="button"  class="btn btn-dark" onclick="mostrar(js)">Mas info sobre: JS</button>
+          </div>
+
+          <div hidden="true" class="info-js  info-open">
+            <h2>Uso de js</h2>
+            <br>
+            <p class="texto-seccion">
+              JavaScript es un lenguaje de programacion <b>(uno de los mas populares en la actualidad)</b>, que permite darle funcionalidades a la pagina web.
+              Por ejemplo tenemos la seccion de Habilidades, que al hacer click se habren las pestañas de informacion de cada lenguaje, o al hacer scroll, los elementos
+              aparecen con una animacion. Esto esta logrado gracias a la combinacion de HTML,CSS, y JavaScript
+            </p>
+          </div>
+         
+          <div data-aos="fade-up-left" data-aos-duration="1500" class="col-sm-12 col-md-6 col-lg-3 pt-5 lenguaje-logo logo-bootstrap" >
+            <img src="imagenes/Bootstrap_logo.png" class="img-fluid mx-auto d-block front-end">
+            <button type="button"  class="btn btn-dark" onclick="mostrar(bs)">Mas info sobre: Bootstrap</button>
+          </div>
+
+          <div hidden="true" class="info-bootstrap info-open">
+            <h2>Uso de bootstrap</h2>
+            <br>
+            <p class="texto-seccion">
+              Bootstrap es un framework <b>(tambien dicho en español libreria)</b> front-end utilizado para desarrollar paginas web responsivas, osea, adaptables a diferentes interfaces.<br>
+              Esta libreria ayuda a crear la estetica de cada sitio web muchisimo mas rapido gracias a sus componentes predeterminados. Esos componentes se pueden adaptar a las
+              necesidades del cliente
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div data-aos="flip-up" data-aos-duration="1800" class="container">
+       <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 titulo-seccion">
+            contacto
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            contactame para inciar tu proyecto
+          </div>
+          <div class="col-12 col-md-4">
+              <a href="mailto:brianbulacio59@gmail.com" target="_blank">
+                <button type="button" class="btn btn-light">
+                  contacto
+                   <i class="bi bi-envelope-at"></i>
+                </button>
+              </a> 
+              <a href="https://api.whatsapp.com/send?phone=1133897004" target="_blank">
+                <button type="button" class="btn btn-success">
+                  contacto
+                  <i class="bi bi-whatsapp"></i>
+                </button>
+              </a> 
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+    
+    <footer class="d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-icono" src="imagenes/laptop.svg" alt="logo">
+      <p class="footer-texto">Aprendiendo y mejorando todos los dias</p>
+      <div class="icono-redes d-flex flex-wrap align-items-center justify-content-center">
+        
+        <a href="https://www.linkedin.com/in/brian-bulacio-1b8b7b235/" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/bulacio_braian/ " target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/braian.bulacio" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+      </div>
+    </footer>
+ <!--Bootstrap scrip-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   <!--scrip propios-->
+ <script src="codigo.js"></script>
+<!--Anime On Scroll-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  </body>
